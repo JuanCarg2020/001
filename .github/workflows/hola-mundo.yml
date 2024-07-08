@@ -10,5 +10,8 @@ jobs:
     - name: Check out repository code
       uses: actions/checkout@v2
 
+    - name: Make script executable
+      run: chmod +x ./Hola.bash
+
     - name: Run Hola Mundo script
       run: ./Hola.bash
