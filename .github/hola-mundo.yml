@@ -1,0 +1,14 @@
+name: Hola Mundo
+
+on: [push]
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+
+    - name: Run Hola Mundo script
+      run: ./Hola.bash
